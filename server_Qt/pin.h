@@ -3,15 +3,15 @@
 class Pin
 {
     public:
-        Pin(int nr, bool dir, bool pull_up);
-        void set(void);
+        Pin(int nr, int dir, int pull_up);
+        void set(int value);
         int get(void);
         void changeDir(void);
 
     private:
         int numar;
     private:
-        bool directie;
+        int directie;
     private:
-        bool pull_up;
+        int pullUp;
 };
